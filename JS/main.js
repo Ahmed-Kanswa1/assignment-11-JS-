@@ -144,7 +144,7 @@ function getLocation() {
   
 
  async function call(){
-  // await getLocation()
+  await getLocation()
   await display()
  }
 
