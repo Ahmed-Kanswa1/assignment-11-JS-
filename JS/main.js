@@ -22,7 +22,7 @@ function getCountryName(city){
 })
 
 
-xhr.open('get',`http://api.weatherapi.com/v1/forecast.json?key=e9256cb46b95488180c172900233107&q=${city}&days=3`);
+xhr.open('get',`https://api.weatherapi.com/v1/forecast.json?key=e9256cb46b95488180c172900233107&q=${city}&days=3`);
 xhr.send()
 
 
@@ -128,7 +128,7 @@ function getLocation() {
               } 
              
           });
-          apiNew.open('get','http://ip-api.com/json');
+          apiNew.open('get','https://ip-api.com/json');
               apiNew.send()
         } );
       } 
@@ -144,7 +144,7 @@ function getLocation() {
   
 
  async function call(){
-  await getLocation()
+  // await getLocation()
   await display()
  }
 
