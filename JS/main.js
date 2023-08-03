@@ -117,9 +117,10 @@ function getLocation() {
           apiNew.addEventListener('readystatechange',function(){
               if(apiNew.readyState==4){
                 let result = JSON.parse(apiNew.responseText);
-                console.log(result+'asdasdasdas');
+                console.log(result);
+                console.log('blaaaaaaaaaaaaaaaaaaaaaaaaaah');
                
-                   city = result.country;
+                   city = result.country_name;
                   console.log("City: " + city);
                   getCountryName(city)
                
@@ -128,7 +129,8 @@ function getLocation() {
               } 
              
           });
-          apiNew.open('get','https://ip-api.com/json');
+          apiNew.open('get','https://ipapi.co/json/');
+         
               apiNew.send()
         } );
       } 
